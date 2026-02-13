@@ -7,6 +7,7 @@ import { TenantModule } from './tenant/tenant.module';
 import { UserModule } from './user/user.module';
 import { PlanModule } from './plan/plan.module';
 import { AuthModule } from './auth/auth.module';
+import { CustomerModule } from './customer/customer.module';
 
 @Module({
   imports: [
@@ -35,6 +36,7 @@ import { AuthModule } from './auth/auth.module';
     TenantModule,
     UserModule,
     PlanModule,
+    CustomerModule,
   ],
   controllers: [AppController],
   providers: [AppService],
