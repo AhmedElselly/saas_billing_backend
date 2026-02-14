@@ -9,6 +9,7 @@ import { PlanModule } from './plan/plan.module';
 import { AuthModule } from './auth/auth.module';
 import { CustomerModule } from './customer/customer.module';
 import { SubscriptionModule } from './subscription/subscription.module';
+import { AccountingModule } from './accounting/accounting.module';
 
 @Module({
   imports: [
@@ -39,6 +40,7 @@ import { SubscriptionModule } from './subscription/subscription.module';
     PlanModule,
     CustomerModule,
     SubscriptionModule,
+    AccountingModule,
   ],
   controllers: [AppController],
   providers: [AppService],

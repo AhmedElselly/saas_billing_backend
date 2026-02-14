@@ -7,7 +7,7 @@ import { CurrentUser } from 'src/auth/decorators/current-user.decorator';
 @UseGuards(JwtAuthGuard)
 @Controller('subscriptions')
 export class SubscriptionController {
-  constructor(private readonly subscriptionService: SubscriptionService) {}
+  constructor(private subscriptionService: SubscriptionService) {}
 
   @Post('create')
   create(
